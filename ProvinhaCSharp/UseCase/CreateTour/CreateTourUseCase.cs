@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using ProvinhaCSharp.Models;
 using ProvinhaCSharp.Services.ExtractJWTData;
 
@@ -15,7 +16,7 @@ public class CreateTourUseCase(
         var user = await ctx.Users.FindAsync(userID);
 
         //cria a tour com os dados do payload
-        var tour = new Tour
+            var tour = new Tour
         {
             UserID = (Guid)userID,
             User = user,
