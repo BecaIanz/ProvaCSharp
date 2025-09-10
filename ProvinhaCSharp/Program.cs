@@ -2,13 +2,13 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using ProvinhaCSharp.EndPoints;
 using ProvinhaCSharp.Models;
 using ProvinhaCSharp.Services.ExtractJWTData;
 using ProvinhaCSharp.Services.JWT;
 using ProvinhaCSharp.UseCase;
 
 var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
 builder.Services.AddDbContext<TourismAppDbContext>(options =>
 {
@@ -26,6 +26,7 @@ builder.Services.AddTransient<EditTourUseCase>();
 builder.Services.AddTransient<GetTourUseCase>();
 builder.Services.AddTransient<LoginUseCase>();
 
+//muitas coisas do JWT
 var jwtSecret = Environment.GetEnvironmentVariable("JWT_SECRET");
 var keyBytes = Encoding.UTF8.GetBytes(jwtSecret);
 var key = new SymmetricSecurityKey(keyBytes);
@@ -45,7 +46,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-    
+builder.Services.AddAuthentication(); // Config JWT
+builder.Services.AddAuthorization(); // Config JWT
+
+var app = builder.Build();
+
+//coisas do swagger
+app.UseSwagger();
+app.UseSwaggerUI();
+
+app.ConfigureAuthEndpoint();
+app.UseAuthentication(); // Config JWT
+app.UseAuthorization();
+
 builder.Services.AddAuthentication(); // Config JWT
 builder.Services.AddAuthorization(); // Config JWT
 

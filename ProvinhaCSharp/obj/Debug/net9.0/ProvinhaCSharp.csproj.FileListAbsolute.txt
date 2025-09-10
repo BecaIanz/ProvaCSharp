@@ -161,3 +161,9 @@ C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\obj\Debug\net9.0\refint\Provi
 C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\obj\Debug\net9.0\ProvinhaCSharp.pdb
 C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\obj\Debug\net9.0\ProvinhaCSharp.genruntimeconfig.cache
 C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\obj\Debug\net9.0\ref\ProvinhaCSharp.dll
+C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\disrct\Desktop\ProvaCSharp\ProvinhaCSharp\obj\Debug\net9.0\ProvinhaCSharp.MvcApplicationPartsAssemblyInfo.cs

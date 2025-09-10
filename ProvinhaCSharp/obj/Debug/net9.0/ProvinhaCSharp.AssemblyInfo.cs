@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProvinhaCSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c2ff2a37520a4e4577c6b0c479609dbbbc53108")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48e7cd1ef2274ba88ee77b52deb726e7aa23e9a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProvinhaCSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProvinhaCSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
